@@ -1,0 +1,280 @@
+    1  git clone https://github.com/abhilwaria/webtest.git
+    2  ls
+    3  cd webtest/
+    4  ls
+    5  ls -la
+    6  cd .git
+    7  ls
+    8  ls -ltr
+    9  cd refs/
+   10  ls
+   11  ls -ltr
+   12  cd heads
+   13  ls 0ltr
+   14  ls -ltr
+   15  cd ../../
+   16  ls
+   17  vi config
+   18  cd ..
+   19  cd .git
+   20  cd branches/
+   21  ls
+   22  ls -la
+   23  cd ..
+   24  ls -ltr
+   25  ls objects/ects
+   26  ls objects
+   27  cd ..
+   28  ld
+   29  ls
+   30  git status
+   31  git add --all
+   32  git status
+   33  git commit -m "added index.html"
+   34  git status
+   35  git push
+   36  ls -ltr
+   37  cd .git
+   38  ls -latr
+   39  view COMMIT_EDITMSG 
+   40  view config 
+   41  cd ..
+   42  git config --global user.name "abhilwaria"
+   43  git config --global user.email ankur.bhilwaria@gmail.com
+   44  cd .git
+   45  view config 
+   46  ls -ltr
+   47  view description 
+   48  cd ..
+   49  git logs
+   50  git log
+   51  git branch -v
+   52  git branch dev
+   53  git branch -v
+   54  git checkout dev
+   55  git branch -v
+   56  vi index.html 
+   57  git add --all
+   58  got commit -m "modified for dev Branch"
+   59  git commit -m "modified for dev Branch"
+   60  git status
+   61  git branch -v
+   62  git checkout mater
+   63  git checkout master
+   64  git lo
+   65  git log
+   66  git checkout dev
+   67  git log
+   68  git checkout master
+   69  git merge dev
+   70  checkout dev
+   71  vi index.html 
+   72  git add *
+   73  git commit -m "change for dev after first merge"
+   74  git checkout dev
+   75  vi index.html 
+   76  git add *
+   77  git commit -m "change for conflict"
+   78  git status
+   79  cat index.html 
+   80  git checkout master
+   81  cat index.html 
+   82  git merge dev
+   83  vi index.html 
+   84  git add *
+   85  git commit -m "merged after resolving conflict"
+   86  git checkout dev
+   87  git status
+   88  git checkout master
+   89  git status
+   90  git log
+   91  git branch -v --all
+   92  git remote -v
+   93  git push --set-upstream origin master:dev
+   94  vi index.html 
+   95  git add *
+   96  git commit -m "local"
+   97  git push --set-upstream origin master:dev
+   98  git pull origin dev
+   99  git branch -v --all
+  100  git branch -r
+  101  git branch -v
+  102  git branch -lall
+  103  git branch -all
+  104  git branch --all
+  105  git add *
+  106  git commit -m "merged fir dev2"
+  107  git push --set-upstream origin master:dev
+  108  git history
+  109  history
+  110  git status
+  111  git remote -v
+  112  git checkout dev
+  113  git remote -v
+  114  pwd
+  115  sudo yum -y install java-1.8.0-openjdk.x86_64
+  116  sudo yum -y remove java-1.7.0-openjdk
+  117  sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+  118  sudo yum install -y  jenkins
+  119  sudo service jenkins start
+  120  sudo  rpm --import http://pkg.jenkins-ci.org/redhat-stable/jenkins-ci.org.key
+  121  sudo service jenkins start
+  122  ps -ef
+  123  ps -ef|grep jenkin
+  124  sudo yum install -y  jenkins
+  125  sudo service jenkins start
+  126  ps -ef|grep jenkin
+  127  sudo chkconfig jenkins on
+  128  ps -ef|grep jenkin
+  129  ifconfig
+  130  ipconfig
+  131  view /var/lib/jenkins/secrets/initialAdminPassword
+  132  cat /var/lib/jenkins/secrets/initialAdminPassword
+  133  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+  134  ls /var/lib/jenkins/jobs/
+  135  ls /var/lib/jenkins/jobs/webtest/
+  136  sudo yum -y install java-1.8.0-openjdk-deve
+  137  sudo yum -y install java-1.8.0-openjdk-devel
+  138  wget http://www-eu.apache.org/dist/maven/maven-3/3.5.4/binaries/apache-maven-3.5.4-bin.tar.gz
+  139  tar -zxvf apache-maven-3.5.4-bin.tar.gz 
+  140  sudo mv apache-maven-3.5.4 /usr/local/
+  141  ls
+  142  cd webtest/
+  143  ls
+  144  cd ..
+  145  ls
+  146  chmod 600 name.pem 
+  147  ssh -i ec2-user@54.208.208.148
+  148  ssh -i name.pem ec2-user@54.196.63.233
+  149  ssh -i name.pem ec2-user@54.208.208.148
+  150  sudo yum -y install docker
+  151  cd /usr
+  152  ls
+  153  cd bin
+  154  ls
+  155  ls doc*
+  156  cd
+  157  sudo usermod -a -G docker ec2-user
+  158  id -a
+  159  who am i
+  160  sudo service docker start
+  161  sudo chkconfig docker on
+  162  ps -eaf|grep docker
+  163  docker ps
+  164  docker info
+  165  docker info|grep hub
+  166  pwd
+  167  mkdir code
+  168  echo "<h1>This is a docker image</h1>" > code/index.html
+  169  docker run -dit --name my-apache-app -p 9000:80 -v /home/ec2-user/environment/code:/usr/local/apache2/htdocs/ httpd:2.4
+  170  docker ps
+  171  docker images
+  172  docker ps
+  173  docker stop ffcebb8356d8
+  174  docker ps
+  175  docker ps -a
+  176  docker start ffcebb8356d8
+  177  docker ps -a
+  178  docker ps
+  179  docker inspect ffcebb8356d8
+  180  docker exec -it ffcebb8356d8
+  181  docker exec -it ffcebb8356d8 /bin/bash
+  182  docker restart ffcebb8356d8
+  183  docker inspect ffcebb8356d8
+  184  docker stop ffcebb8356d8
+  185  docker rm ffcebb8356d8
+  186  docker ps -a
+  187  cd testapp/frontend/
+  188  docker build -t myapache:1.0 .
+  189  docker images
+  190  cd ubuntutestapp/
+  191  ls
+  192  docker build -t myubuntu:1.0 .
+  193  history
+  194  history|grep bash
+  195  docker -ps
+  196  docker ps
+  197  history|grep run
+  198  docker run -dit --name my-apache-app -p 9000:80 -v /home/ec2-user/environment/code:/usr/local/apache2/htdocs/ httpd:2.4
+  199  docker ps
+  200  history|grep bash
+  201  docker exec -it docker exec -it /bin/bash
+  202  docker exec -it 1c080846d9f1 /bin/bash
+  203  docker run -it ubuntu:latest
+  204  cd
+  205  cd testapp
+  206  pwd
+  207  cd environment/
+  208  cd testapp/
+  209  cd backend/
+  210  ls
+  211  docker build -t mynginx:1.0 .
+  212  docker ps
+  213  docker images
+  214  history
+  215  ipconfig -a
+  216  ipconfig -all
+  217  ifconfig -all
+  218  ifconfig -a
+  219  docker run -d --name mytestnginxmyn -p 9000:80 mynginx:1.0
+  220  docker ps
+  221  docker stop 1c080846d9f1
+  222  docker run -d --name mytestnginxmyn -p 9000:80 mynginx:1.0
+  223  docker remove 1c080846d9f1
+  224  docker rm 1c080846d9f1
+  225  docker run -d --name mytestnginxmyn -p 9000:80 mynginx:1.0
+  226  docker ps
+  227  docker run -d --name mytestnginxmyn -p 9000:80 mynginx:1.0
+  228  docker ps
+  229  docker run -d --name mytestnginx -p 9000:80 mynginx:1.0
+  230  docker ps
+  231  docker tag mynginx:1.0 m abhilwaria/mynginx:latest
+  232  docker tag mynginx:1.0 abhilwaria/mynginx:latest
+  233  docker tag mynginx:1.0 abhilwaria/mynginx:lfirst
+  234  docker login
+  235  docker push
+  236  docker push --help
+  237  docker push abhilwaria/mynginx
+  238  docker ps
+  239  docker run -d --name mohansnginx -p 9001:80 mohanraz81/mynginx0208
+  240  docker ps
+  241  cd
+  242  wget -O kops https://github.com/kubernetes/kops/releases/download/1.8.1/kops-linux-amd64
+  243  chmod +x ./kops
+  244  sudo mv ./kops /usr/local/bin/
+  245  kops
+  246  wget -O kubectl https://storage.googleapis.com/kubernetes-release/release/1.8.1/bin/linux/amd64/kubectl
+  247  chmod +x ./kubectl
+  248  sudo mv ./kubectl /usr/local/bin/kubectl
+  249  chmod +x ./kops
+  250  wget -O kops https://github.com/kubernetes/kops/releases/download/1.8.1/kops-linux-amd64
+  251  chmod +x ./kops
+  252  sudo mv ./kops /usr/local/bin/
+  253  ls
+  254  ls /usr/local/bin
+  255  wget -O kubectl https://storage.googleapis.com/kubernetes-release/release/1.8.0/bin/linux/amd64/kubectl
+  256  wget -O kubectl https://storage.googleapis.com/kubernetes-release/release/v1.8.1/bin/linux/amd64/kubectl
+  257  chmod +x ./kubectl
+  258  sudo mv ./kubectl /usr/local/bin/kubectl
+  259  dig ns humbhihai.tk
+  260  aws s3api create-bucket --bucket kube-humbhihai-ml-state-store  --region us-east-1
+  261  aws s3api create-bucket --bucket kube-humbhihai-tk-state-store  --region us-east-1
+  262  aws s3api put-bucket-versioning --bucket kube-abhilwaria-tk-state-store  --versioning-configuration Status=Enabled
+  263  aws s3api put-bucket-versioning --bucket kube-humbhihai-tk-state-store  --versioning-configuration Status=Enabled
+  264  aws configure
+  265  vi ~/.bash_profile
+  266  view ~/.bash_profile
+  267  vi ~/.bash_profile
+  268  echo $NAME
+  269  ssh -keygen
+  270  ssh-keygen
+  271  kops create cluster     --zones=us-east-1a,us-east-1b,us-east-1c     --master-zones=us-east-1a,us-east-1b,us-east-1c     --node-count=4     --node-size=t2.small     --master-size=t2.small     --name ${NAME}
+  272  kops create cluster     --zones=us-east-1a,us-east-1b,us-east-1c     --master-zones=us-east-1a,us-east-1b,us-east-1c     --node-count=4     --node-size=t2.small     --master-size=t2.small     --name ${NAME}
+  273  vi ~/.bash_profile
+  274  kops create cluster     --zones=us-east-1a,us-east-1b,us-east-1c     --master-zones=us-east-1a,us-east-1b,us-east-1c     --node-count=4     --node-size=t2.small     --master-size=t2.small     --name ${NAME}
+  275  echo ${kops create cluster \}     --zones=us-east-1a,us-east-1b,us-east-1c     --master-zones=us-east-1a,us-east-1b,us-east-1c     --node-count=4     --node-size=t2.small     --master-size=t2.small     --name ${NAME}
+  276  echo ${KOPS_STATE_STORE}
+  277  vi ~/.bash_profile
+  278  echo ${KOPS_STATE_STORE}
+  279  history
+  280  history > history
